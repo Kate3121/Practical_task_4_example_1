@@ -1,0 +1,27 @@
+﻿<Window x:Class="Practical_task_4_example_1_Stetsenko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practical_task_4_example_1_Stetsenko"
+        mc:Ignorable="d"
+        Title="MenuSample" Height="200" Width="200">
+	<!--це контейнер, який дозволяє "пришвартовувати" внутрішні елементи до країв вікна або панелі.-->
+	<DockPanel >
+	    <!--Створення меню у верхній частині вікна, розмір тексту, його колір-->
+		<Menu DockPanel.Dock="Top" FontFamily="Consolas" FontSize="17" Background="LightCyan">
+			<!--Тут задаеться текст самого меню-->
+			<MenuItem Header="_File">
+				<!--Тут задається підменю, яке знаходиться усередині меню-->
+				<MenuItem Header="_New" />
+				<MenuItem Header="_Open" />
+				<MenuItem Header="_Save" />
+				<!--Розділювач-->
+				<Separator />
+				<MenuItem Header="_Exit" />
+			</MenuItem>
+		</Menu>
+		<!--Створюється багатострокове поле, білим кольором тескту, небесного фоном, шрифтом, розміром та відступами-->
+		<TextBox AcceptsReturn="True" Foreground="WhiteSmoke" Background="#FF71CCCC" FontFamily="Consolas"  FontSize="15" Padding="3,5,0,0" />
+	</DockPanel>
+</Window>

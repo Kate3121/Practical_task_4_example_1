@@ -20,5 +20,10 @@ namespace Practical_task_4_example_1_Stetsenko
         {
             InitializeComponent();
         }
+        //Випадне вікно яке буде активуватись при натисканні на меню New
+        private void mnuNew_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Hello");
+        }
     }
 }
